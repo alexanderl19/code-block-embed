@@ -31,6 +31,13 @@
 <style lang="scss">
 	:global(body) {
 		background: #0d1117;
+
+		// Hide Scrollbar
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	:global(.hljs) :global(tr) {
