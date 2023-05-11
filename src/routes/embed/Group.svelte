@@ -1,12 +1,29 @@
 <script lang="ts">
+	import { ChevronLeft, ChevronRight, Eye, EyeOff } from 'lucide-svelte';
+
 	export let group: number;
 	export let max: number;
+	export let visible: boolean;
+	export let showOnHover: boolean;
 </script>
 
 <div class="selector">
-	<button on:click={() => (group = Math.max(0, group - 1))}>‹</button>
-	{group + 1} / {max}
-	<button on:click={() => (group = Math.min(max - 1, group + 1))}>›</button>
+	<div class="group">
+		<button on:click={() => (group = Math.max(0, group - 1))}><ChevronLeft size={16} /></button>
+		{group + 1} / {max}
+		<button on:click={() => (group = Math.min(max - 1, group + 1))}>
+			<ChevronRight size={16} />
+		</button>
+	</div>
+	{#if !showOnHover}
+		<button on:click={() => (visible = !visible)}>
+			{#if visible}
+				<EyeOff size={16} />
+			{:else}
+				<Eye size={16} />
+			{/if}
+		</button>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -21,12 +38,17 @@
 		padding: 4px;
 		border-radius: 1000px;
 		color: #fff;
-		font-family: system-ui, sans-serif;
-		font-size: 14px;
-		font-feature-settings: 'tnum' on, 'lnum' on;
+		display: flex;
+		align-items: center;
+	}
+
+	.group {
 		display: flex;
 		align-items: center;
 		gap: 12px;
+		font-family: system-ui, sans-serif;
+		font-size: 14px;
+		font-feature-settings: 'tnum' on, 'lnum' on;
 	}
 
 	button {

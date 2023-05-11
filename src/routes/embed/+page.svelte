@@ -9,6 +9,7 @@
 	export let data: PageData;
 
 	let group = 0;
+	let visible = false;
 	$: highlightedLines = data.lines?.[group];
 </script>
 
@@ -22,11 +23,13 @@
 </svelte:head>
 
 {#if data.lines && data.lines.length > 1}
-	<Group bind:group max={data.lines.length} />
+	<Group bind:group max={data.lines.length} bind:visible showOnHover={data.showOnHover} />
 {/if}
-<Highlight language={markdown} code={data.code} let:highlighted>
-	<LineNumbers {highlighted} {highlightedLines} hideBorder wrapLines />
-</Highlight>
+<div class:showOnHover={data.showOnHover} class:visible>
+	<Highlight language={markdown} code={data.code} let:highlighted>
+		<LineNumbers {highlighted} {highlightedLines} hideBorder wrapLines />
+	</Highlight>
+</div>
 
 <style lang="scss">
 	:global(body) {
@@ -46,7 +49,8 @@
 		transition: opacity 500ms ease-out, filter 500ms ease-out;
 	}
 
-	:global(.hljs):hover :global(tr) {
+	.showOnHover :global(.hljs):hover :global(tr),
+	.visible :global(.hljs) :global(tr) {
 		opacity: 1;
 		filter: saturate(1);
 	}

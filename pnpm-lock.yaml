@@ -13,6 +13,9 @@ devDependencies:
   highlight.js:
     specifier: ^11.8.0
     version: 11.8.0
+  lucide-svelte:
+    specifier: ^0.216.0
+    version: 0.216.0(svelte@3.59.1)
   postcss:
     specifier: ^8.4.23
     version: 8.4.23
@@ -673,6 +676,14 @@ packages:
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /lucide-svelte@0.216.0(svelte@3.59.1):
+    resolution: {integrity: sha512-e7uFIf3H1Tpoq+RRvAXLBCEe1YgZwOu1LEZY8lkdja3djJBHNsk2/Pgkec/ptT9nzU9oLK/D5lrVxtyvMua0BQ==}
+    peerDependencies:
+      svelte: ^3.49.0
+    dependencies:
+      svelte: 3.59.1
     dev: true
 
   /magic-string@0.27.0:
