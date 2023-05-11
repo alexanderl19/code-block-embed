@@ -14,5 +14,5 @@ export const load = (async ({ url }) => {
 
 	const showOnHover = url.searchParams.get('showOnHover');
 
-	return { code, lines: linesParsed, showOnHover: showOnHover === 'true' };
+	return { code, lines: linesParsed, showOnHover: !(showOnHover === 'false') };
 }) satisfies PageServerLoad;
