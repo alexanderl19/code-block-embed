@@ -16,9 +16,8 @@
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 16px;
-		opacity: 0.85;
-		background-color: #232323;
-		backdrop-filter: blur(15px);
+		background-color: rgba(35, 35, 35, 0.65);
+		backdrop-filter: saturate(200%) blur(4px);
 		padding: 4px;
 		border-radius: 1000px;
 		color: #fff;
