@@ -21,7 +21,7 @@
 	{/if}
 </svelte:head>
 
-{#if data.lines}
+{#if data.lines && data.lines.length > 1}
 	<Group bind:group max={data.lines.length} />
 {/if}
 <Highlight language={markdown} code={data.code} let:highlighted>
