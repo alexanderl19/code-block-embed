@@ -29,6 +29,10 @@
 </Highlight>
 
 <style lang="scss">
+	:global(body) {
+		background: #0d1117;
+	}
+
 	:global(.hljs) :global(tr) {
 		opacity: 0.5;
 		filter: saturate(0.5) blur(1px);
