@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import Highlight, { LineNumbers } from 'svelte-highlight';
-	import markdown from 'svelte-highlight/languages/markdown';
+	import { HighlightAuto, LineNumbers } from 'svelte-highlight';
 	import githubDark from 'svelte-highlight/styles/github-dark';
 	import generateStyleTag from './generateStyleTag';
 	import Group from './Group.svelte';
@@ -26,9 +25,9 @@
 	<Group bind:group max={data.lines.length} bind:visible showOnHover={data.showOnHover} />
 {/if}
 <div class:showOnHover={data.showOnHover} class:visible>
-	<Highlight language={markdown} code={data.code} let:highlighted>
+	<HighlightAuto code={data.code} let:highlighted>
 		<LineNumbers {highlighted} {highlightedLines} hideBorder wrapLines />
-	</Highlight>
+	</HighlightAuto>
 </div>
 
 <style lang="scss">
