@@ -8,8 +8,8 @@
 	export let data: PageData;
 
 	let group = 0;
-	let visible = false;
-	$: highlightedLines = data.lines?.[group];
+	let visible = data.lines.length === 0;
+	$: highlightedLines = data.lines[group];
 </script>
 
 <svelte:head>
@@ -21,7 +21,7 @@
 	{/if}
 </svelte:head>
 
-{#if data.lines && data.lines.length > 1}
+{#if data.lines.length > 1}
 	<Group bind:group max={data.lines.length} bind:visible showOnHover={data.showOnHover} />
 {/if}
 <div class:showOnHover={data.showOnHover} class:visible>

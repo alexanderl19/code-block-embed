@@ -8,9 +8,8 @@ export const load = (async ({ url }) => {
 	const code = await (await fetch(codeUrl)).text();
 
 	const lines = url.searchParams.get('lines');
-	const linesParsed = lines
-		?.split(':')
-		.map((lines) => lines.split(',').map((number) => parseInt(number)));
+	const linesParsed =
+		lines?.split(':').map((lines) => lines.split(',').map((number) => parseInt(number))) ?? [];
 
 	const showOnHover = url.searchParams.get('showOnHover');
 
