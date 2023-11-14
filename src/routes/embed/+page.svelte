@@ -24,7 +24,7 @@
 {#if data.lines.length > 1}
 	<Group bind:group max={data.lines.length} bind:visible showOnHover={data.showOnHover} />
 {/if}
-<div class:showOnHover={data.showOnHover} class:visible>
+<div class:showOnHover={data.showOnHover} class:visible style:font-size={`${data.fontSize}px`}>
 	<HighlightAuto code={data.code} let:highlighted>
 		<LineNumbers {highlighted} {highlightedLines} hideBorder wrapLines />
 	</HighlightAuto>

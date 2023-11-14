@@ -4,6 +4,7 @@ import { error } from '@sveltejs/kit';
 export const load = (async ({ url }) => {
 	const codeUrl = url.searchParams.get('code');
 	if (!codeUrl) throw error(400, '`code` search parameter is required.');
+	const fontSize = url.searchParams.get('fontSize');
 
 	const code = await (await fetch(codeUrl)).text();
 
@@ -13,5 +14,10 @@ export const load = (async ({ url }) => {
 
 	const showOnHover = url.searchParams.get('showOnHover');
 
-	return { code, lines: linesParsed, showOnHover: !(showOnHover === 'false') };
+	return {
+		code,
+		lines: linesParsed,
+		showOnHover: !(showOnHover === 'false'),
+		fontSize: Number(fontSize ?? 16)
+	};
 }) satisfies PageServerLoad;
