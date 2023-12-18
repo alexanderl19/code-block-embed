@@ -16,7 +16,7 @@
 		"@sveltejs/kit": "^1.30.3",
 		"autoprefixer": "^10.4.16",
 		"highlight.js": "^11.9.0",
-		"lucide-svelte": "^0.297.0",
+		"lucide-svelte": "^0.298.0",
 		"postcss": "^8.4.32",
 		"postcss-load-config": "^4.0.2",
 		"prettier": "^2.8.8",
