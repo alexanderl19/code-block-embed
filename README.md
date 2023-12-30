@@ -33,19 +33,21 @@ Font size in CSS pixels.
 
 ### `lines`
 
-Type: `1,2,3,...,10:...:1,2,3`
+Type: `0,1,2,...,10:...:1,2,3`
 
 Groups of lines are be separated with a colon (`:`).
 
 Each group of lines is a comma separated list of numbers.
 
+Line numbers are zero indexed (0 corresponds to line 1).
+
 #### Examples
 
-| Group(s)                   | Search Param                    |
-| -------------------------- | ------------------------------- |
-| Lines 1-5                  | `lines=1,2,3,4,5`               |
-| Lines 1-5, Lines 6-10      | `lines=1,2,3,4,5:6,7,8,9,10`    |
-| Lines 1-5 + 10, Lines 6-10 | `lines=1,2,3,4,5,10:6,7,8,9,10` |
+| Group(s)                   | Search Param                  |
+| -------------------------- | ----------------------------- |
+| Lines 1-5                  | `lines=0,1,2,3,4`             |
+| Lines 1-5, Lines 6-10      | `lines=0,1,2,3,4:5,6,7,8,9`   |
+| Lines 1-5 + 10, Lines 6-10 | `lines=0,1,2,3,4,9:5,6,7,8,9` |
 
 ### `showOnHover`
 
