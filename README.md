@@ -49,7 +49,7 @@ Each group of lines is a comma separated list of numbers.
 
 ### `showOnHover`
 
-`"true"`, or `"false"` | Default: false
+`"true"`, or `"false"` | Default: true
 
 Enabling will unblur non-highlighted lines while hovering on the site.
 
