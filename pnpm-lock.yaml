@@ -6,13 +6,13 @@ settings:
 
 devDependencies:
   '@sveltejs/adapter-vercel':
-    specifier: ^4.0.0
+    specifier: 4.0.3
     version: 4.0.3(@sveltejs/kit@2.0.6)
   '@sveltejs/kit':
-    specifier: ^2.0.0
+    specifier: 2.0.6
     version: 2.0.6(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
   '@sveltejs/vite-plugin-svelte':
-    specifier: ^3.0.0
+    specifier: 3.0.1
     version: 3.0.1(svelte@4.2.8)(vite@5.0.10)
   autoprefixer:
     specifier: 10.4.16
@@ -57,7 +57,7 @@ devDependencies:
     specifier: 5.3.3
     version: 5.3.3
   vite:
-    specifier: ^5.0.0
+    specifier: 5.0.10
     version: 5.0.10(sass@1.69.6)
 
 packages:
