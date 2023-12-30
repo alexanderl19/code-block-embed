@@ -2,7 +2,8 @@
 
 A site that displays raw text files with syntax highliting. Primarily designed to be embeded presentations, such as with Tome.
 
-![sameple code with lines highlighted and other lines blurred, then different sets of lines get highlighted as the user clicks a right arrow icon. then, the user then clicks an eye icon and the previously blurred lines become unblurred.](./.github/assets/demo.mp4)
+https://github.com/alexanderl19/code-block-embed/assets/41758627/df408a45-3b33-42b3-8e1b-f891085d4c51
+
 ![a Tome slide containing the text "Basic Endpoint" with an embeded code block to the right of the text. the user currently has the second group of lines out of four sets highlighted. ](./.github/assets/demo-tome.jpeg)
 
 ## Guide
