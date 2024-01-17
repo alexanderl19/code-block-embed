@@ -15,7 +15,7 @@
 		"@sveltejs/adapter-vercel": "4.0.5",
 		"@sveltejs/kit": "2.0.8",
 		"@sveltejs/vite-plugin-svelte": "3.0.1",
-		"autoprefixer": "10.4.16",
+		"autoprefixer": "10.4.17",
 		"highlight.js": "11.9.0",
 		"lucide-svelte": "0.311.0",
 		"postcss": "8.4.33",
