@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "4.0.5",
-		"@sveltejs/kit": "2.4.3",
+		"@sveltejs/kit": "2.5.0",
 		"@sveltejs/vite-plugin-svelte": "3.0.2",
 		"autoprefixer": "10.4.17",
 		"highlight.js": "11.9.0",
