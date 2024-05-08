@@ -17,7 +17,7 @@
 		"@sveltejs/vite-plugin-svelte": "3.0.2",
 		"autoprefixer": "10.4.19",
 		"highlight.js": "11.9.0",
-		"lucide-svelte": "0.376.1",
+		"lucide-svelte": "0.378.0",
 		"postcss": "8.4.38",
 		"postcss-load-config": "4.0.2",
 		"prettier": "2.8.8",
