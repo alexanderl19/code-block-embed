@@ -5,9 +5,9 @@
 	import Group from './Group.svelte';
 
 	export let code: string;
-	export let lines: number[][];
-	export let showOnHover: boolean;
-	export let fontSize: number;
+	export let lines: number[][] = [];
+	export let showOnHover: boolean = false;
+	export let fontSize: number = 16;
 
 	let group = 0;
 	let visible = lines.length === 0;

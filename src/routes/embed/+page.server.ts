@@ -12,12 +12,12 @@ export const load = (async ({ url }) => {
 	const linesParsed =
 		lines?.split(':').map((lines) => lines.split(',').map((number) => parseInt(number))) ?? [];
 
-	const showOnHover = url.searchParams.get('showOnHover');
+	const showOnHover = !(url.searchParams.get('showOnHover') === 'false');
 
 	return {
 		code,
 		lines: linesParsed,
-		showOnHover: !(showOnHover === 'false'),
-		fontSize: Number(fontSize ?? 16)
+		showOnHover: showOnHover || undefined,
+		fontSize: Number(fontSize) || undefined
 	};
 }) satisfies PageServerLoad;
