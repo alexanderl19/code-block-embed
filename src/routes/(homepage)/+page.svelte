@@ -31,7 +31,10 @@
 </div>
 <div class="mx3 my12 font-sans">
 	<p class="my6 font-archivo font-medium max-w-lg text-balance text-xl">
-		Display interactive code blocks in your presentations, or wherever you can embed a webpage.
-		<!-- View this example <a class="text-blue-7 decoration-none hover:underline" href="">Tome</a>. -->
+		Display interactive code blocks in your presentations, or wherever you can embed a webpage. View
+		this example <a
+			class="text-blue-7 decoration-none hover:underline"
+			href="https://tome.app/alexander/code-block-embed-clxtjhwu000gykagfr3imz6pa">Tome</a
+		>.
 	</p>
 </div>
