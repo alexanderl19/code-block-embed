@@ -3,9 +3,14 @@
 	import Embed from '$lib/Embed.svelte';
 
 	export let data: PageData;
+	$: ({ code, lines, showOnHover, fontSize, wrapLines, fileName } = data);
 </script>
 
-<Embed {...data} />
+<svelte:head>
+	<title>{fileName}</title>
+</svelte:head>
+
+<Embed {code} {lines} {showOnHover} {fontSize} {wrapLines} />
 
 <style lang="scss">
 	:global(body) {

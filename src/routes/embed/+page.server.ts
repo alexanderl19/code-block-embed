@@ -4,9 +4,11 @@ import { error } from '@sveltejs/kit';
 export const load = (async ({ url }) => {
 	const codeUrl = url.searchParams.get('code');
 	if (!codeUrl) throw error(400, '`code` search parameter is required.');
-	const fontSize = url.searchParams.get('fontSize');
-
 	const code = await (await fetch(codeUrl)).text();
+
+	const fileName = new URL(codeUrl).pathname.split('/').pop();
+
+	const fontSize = url.searchParams.get('fontSize');
 
 	const lines = url.searchParams.get('lines');
 	const linesParsed =
@@ -20,6 +22,7 @@ export const load = (async ({ url }) => {
 
 	return {
 		code,
+		fileName,
 		lines: linesParsed,
 		showOnHover: showOnHover || undefined,
 		fontSize: Number(fontSize) || undefined,
