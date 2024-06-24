@@ -62,6 +62,6 @@ Enabling will unblur non-highlighted lines while hovering on the site.
 
 ## License
 
-Copyright © 2023 Alexander Liu
+Copyright © 2024 Alexander Liu
 
 MIT License
