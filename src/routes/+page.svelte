@@ -5,7 +5,7 @@
 </script>
 
 <div class="code-embed">
-	<Embed code={landingCode} />
+	<Embed code={landingCode} wrapLines={false} />
 </div>
 
 <style lang="scss">
