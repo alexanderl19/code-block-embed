@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@fontsource-variable/archivo':
+        specifier: 5.0.19
+        version: 5.0.19
       '@sveltejs/adapter-vercel':
         specifier: 4.0.5
         version: 4.0.5(@sveltejs/kit@2.5.17(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.1(sass@1.77.6)))(svelte@4.2.18)(vite@5.3.1(sass@1.77.6)))
@@ -512,6 +515,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/archivo@5.0.19':
+    resolution: {integrity: sha512-dJdRylf/50fqAY6UufqfsdW4TTznA7weeaSMy6258eG11RALWeHwZa4CDWPQ5e0Pj6OFQEV9IXZkjXdeOacvbg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2089,6 +2095,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource-variable/archivo@5.0.19': {}
 
   '@iconify/types@2.0.0': {}
 
