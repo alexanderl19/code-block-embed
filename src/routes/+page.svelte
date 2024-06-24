@@ -6,6 +6,10 @@
 
 <svelte:head>
 	<title>Code Block Embed</title>
+	<meta
+		name="description"
+		content="A site that displays raw text files with syntax highliting. Primarily designed to be embeded within presentations, such as with Tome."
+	/>
 </svelte:head>
 
 <div class="code-embed">

@@ -1,6 +1,6 @@
 # Code Block Embed
 
-A site that displays raw text files with syntax highliting. Primarily designed to be embeded presentations, such as with Tome.
+A site that displays raw text files with syntax highliting. Primarily designed to be embeded within presentations, such as with Tome.
 
 https://github.com/alexanderl19/code-block-embed/assets/41758627/df408a45-3b33-42b3-8e1b-f891085d4c51
 
