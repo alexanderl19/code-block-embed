@@ -33,17 +33,6 @@
 </div>
 
 <style lang="scss">
-	:global(body) {
-		background: #0d1117;
-
-		// Hide Scrollbar
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-	}
-
 	:global(.hljs) :global(tr) {
 		opacity: 0.5;
 		filter: saturate(0.5) blur(1px);

@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Embed from '$lib/Embed.svelte';
+
+	import landingCode from './landing-code.txt?raw';
+</script>
+
+<div class="code-embed">
+	<Embed code={landingCode} />
+</div>
+
+<style lang="scss">
+	.code-embed {
+		margin: 12px;
+		border-radius: 12px;
+		overflow-x: hidden;
+		max-height: 512px;
+	}
+</style>
