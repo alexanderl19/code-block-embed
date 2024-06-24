@@ -4,6 +4,10 @@
 	import landingCode from './landing-code.txt?raw';
 </script>
 
+<svelte:head>
+	<title>Code Block Embed</title>
+</svelte:head>
+
 <div class="code-embed">
 	<Embed code={landingCode} wrapLines={false} />
 </div>
