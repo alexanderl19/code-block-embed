@@ -14,10 +14,15 @@ export const load = (async ({ url }) => {
 
 	const showOnHover = !(url.searchParams.get('showOnHover') === 'false');
 
+	const wrapLines = Number(url.searchParams.get('wrapLines'));
+	const wrapLinesParsed =
+		!isNaN(wrapLines) && (wrapLines === 0 || wrapLines === 1) ? !!wrapLines : undefined;
+
 	return {
 		code,
 		lines: linesParsed,
 		showOnHover: showOnHover || undefined,
-		fontSize: Number(fontSize) || undefined
+		fontSize: Number(fontSize) || undefined,
+		wrapLines: wrapLinesParsed
 	};
 }) satisfies PageServerLoad;

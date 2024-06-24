@@ -8,6 +8,7 @@
 	export let lines: number[][] = [];
 	export let showOnHover: boolean = false;
 	export let fontSize: number = 16;
+	export let wrapLines: boolean = true;
 
 	let group = 0;
 	let visible = lines.length === 0;
@@ -28,7 +29,7 @@
 {/if}
 <div class:showOnHover class:visible style:font-size={`${fontSize}px`}>
 	<HighlightAuto {code} let:highlighted>
-		<LineNumbers {highlighted} {highlightedLines} hideBorder wrapLines />
+		<LineNumbers {highlighted} {highlightedLines} hideBorder {wrapLines} />
 	</HighlightAuto>
 </div>
 
