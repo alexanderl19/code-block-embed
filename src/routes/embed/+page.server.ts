@@ -16,9 +16,8 @@ export const load = (async ({ url }) => {
 
 	const showOnHover = !(url.searchParams.get('showOnHover') === 'false');
 
-	const wrapLines = Number(url.searchParams.get('wrapLines'));
-	const wrapLinesParsed =
-		!isNaN(wrapLines) && (wrapLines === 0 || wrapLines === 1) ? !!wrapLines : undefined;
+	const wrapLines = url.searchParams.get('wrapLines');
+	const wrapLinesParsed = wrapLines === '0' ? false : wrapLines === '1' ? true : undefined;
 
 	return {
 		code,
