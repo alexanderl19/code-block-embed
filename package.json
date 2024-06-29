@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@fontsource-variable/archivo": "5.0.19",
 		"@sveltejs/adapter-vercel": "4.0.5",
-		"@sveltejs/kit": "2.5.17",
+		"@sveltejs/kit": "2.5.18",
 		"@sveltejs/vite-plugin-svelte": "3.1.1",
 		"@unocss/extractor-svelte": "0.61.0",
 		"@unocss/preset-mini": "0.61.0",
