@@ -20,7 +20,7 @@
 		"@unocss/preset-mini": "0.61.0",
 		"autoprefixer": "10.4.19",
 		"highlight.js": "11.9.0",
-		"lucide-svelte": "0.396.0",
+		"lucide-svelte": "0.399.0",
 		"postcss": "8.4.39",
 		"postcss-load-config": "4.0.2",
 		"prettier": "2.8.8",
