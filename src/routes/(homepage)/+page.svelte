@@ -9,6 +9,7 @@
 	import Lines from './Lines.svelte';
 
 	import { enhance } from '$app/forms';
+	import Heart from './Heart.svelte';
 
 	export let form: ActionData;
 
@@ -145,3 +146,14 @@
 		description="When lines exceed the width of the screen and this option is enabled, the excess will be shown below the line. When disabled, the page will scroll horizontally to show each line. This option has no effect on line numbering."
 	/>
 </div>
+
+<footer class="flex items-center font-archivo mx3 my16 gap2">
+	Made with
+	<span class="text-red-5"><Heart /></span>
+	<span
+		>by <a
+			class="text-black rounded-md ring-focus-visible decoration-none hover:decoration-underline focus-visible:decoration-underline"
+			href="https://alexanderliu.com">Alexander Liu</a
+		></span
+	>
+</footer>
