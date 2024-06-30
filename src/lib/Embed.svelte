@@ -9,6 +9,7 @@
 	export let showOnHover: boolean = false;
 	export let fontSize: number = 16;
 	export let wrapLines: boolean = true;
+	export let positionAbsoluteSelector: boolean = false;
 
 	let group = 0;
 	let visible = lines.length === 0;
@@ -25,7 +26,7 @@
 </svelte:head>
 
 {#if lines.length > 1}
-	<Group bind:group max={lines.length} bind:visible {showOnHover} />
+	<Group bind:group max={lines.length} bind:visible {showOnHover} {positionAbsoluteSelector} />
 {/if}
 <div class:showOnHover class:visible style:font-size={`${fontSize}px`}>
 	<HighlightAuto {code} let:highlighted>

@@ -5,9 +5,10 @@
 	export let max: number;
 	export let visible: boolean;
 	export let showOnHover: boolean;
+	export let positionAbsoluteSelector: boolean;
 </script>
 
-<div class="selector">
+<div class="selector" class:absolute={positionAbsoluteSelector}>
 	<div class="group">
 		<button on:click={() => (group = Math.max(0, group - 1))}><ChevronLeft size={16} /></button>
 		{group + 1} / {max}
@@ -40,6 +41,10 @@
 		color: #fff;
 		display: flex;
 		align-items: center;
+
+		&.absolute {
+			position: absolute;
+		}
 	}
 
 	.group {

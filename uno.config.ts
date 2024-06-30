@@ -7,5 +7,9 @@ export default defineConfig({
 		fontFamily: {
 			archivo: 'Archivo Variable'
 		}
+	},
+	shortcuts: {
+		'ring-focus-visible':
+			'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-7 focus-visible:ring-offset-2'
 	}
 });
