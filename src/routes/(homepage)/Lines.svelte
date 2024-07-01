@@ -57,9 +57,9 @@
 	const flipDurationMs = 100;
 </script>
 
-<label class="font-medium mb3">
+<label class="mb3 font-medium">
 	<p class="m0">Lines</p>
-	<p class="font-normal m0 mt1 text-stone-6 max-w-prose">
+	<p class="m0 mt1 text-stone-6 font-normal max-w-prose">
 		Lines of code to highlight and view sequential in your embed. Groups of lines should be
 		represented as ranges or individual line numbers separated by commas.<br />
 		eg. "1-7, 10" or "1-7" or "10"
@@ -71,11 +71,11 @@
 		on:finalize={handleSort}
 	>
 		{#each lineGroups as item (item.id)}
-			<div animate:flip={{ duration: flipDurationMs }} class="flex items-stretch gap-2 mt3">
+			<div animate:flip={{ duration: flipDurationMs }} class="mt3 flex gap-2 items-stretch">
 				<div
 					use:dragHandle
 					aria-label="drag-handle for {item.text}"
-					class="grid place-content-center text-stone-6 rounded-xl ring-focus-visible"
+					class="rounded-xl text-stone-6 grid place-content-center ring-focus-visible"
 				>
 					<GripHorizontal size={24} />
 				</div>
@@ -83,10 +83,10 @@
 					bind:value={item.text}
 					min="1"
 					pattern="^( *(\d+|\d+ *- *\d+) *(,|$))*"
-					class="box-border block w-full m-auto text-lg border border-solid px4 h10 rounded-xl border-stone-4 ring-focus-visible"
+					class="px4 m-auto block border border-stone-4 rounded-xl border-solid text-lg h10 w-full box-border ring-focus-visible"
 				/>
 				<button
-					class="grid bg-transparent border-none place-content-center text-stone-6 rounded-xl hover:bg-red-1 hover:text-red-6 ring-focus-visible"
+					class="bg-transparent rounded-xl border-none text-stone-6 grid place-content-center hover:bg-red-1 hover:text-red-6 ring-focus-visible"
 					on:click={() => {
 						const index = lineGroups.findIndex(({ id }) => id === item.id);
 						if (index !== -1) lineGroups.splice(index, 1);
@@ -98,7 +98,7 @@
 			</div>
 		{/each}
 		<button
-			class="grid w-full border-none bg-stone-1 p2 place-content-center text-stone-6 rounded-xl hover:bg-stone-2 focus:bg-stone-2 active:bg-stone-9 active:text-stone-1 ring-focus-visible mt2"
+			class="p2 mt2 bg-stone-1 rounded-xl border-none text-stone-6 grid w-full place-content-center active:bg-stone-9 focus:bg-stone-2 hover:bg-stone-2 active:text-stone-1 ring-focus-visible"
 			on:click={() => {
 				idCount++;
 				lineGroups.push({ id: idCount, text: '' });

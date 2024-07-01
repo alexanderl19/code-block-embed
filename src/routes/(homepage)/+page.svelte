@@ -49,8 +49,8 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="flex items-start lg:items-baseline justify-between font-sans mx3 my16">
-	<p class="max-w-lg text-xl font-medium font-archivo text-balance m0">
+<div class="mx3 my16 font-sans flex justify-between items-start lg:items-baseline">
+	<p class="m0 text-xl font-medium font-archivo max-w-lg text-balance">
 		Display interactive code blocks in your presentations, or wherever you can embed a webpage. View
 		this example <a
 			class="text-blue-7 decoration-none hover:underline"
@@ -63,14 +63,14 @@
 		href="https://github.com/alexanderl19/code-block-embed"
 		target="_blank"
 		rel="noopener noreferrer"
-		class="mr-2 line-height-[0] mt2 lg:mt0"
+		class="mr-2 mt2 line-height-[0] lg:mt0"
 	>
 		<GithubMark />
 	</a>
 </div>
-<div class="overflow-hidden m3 border-rd-xl bg-stone-1">
+<div class="m3 bg-stone-1 border-rd-xl overflow-hidden">
 	<div class="relative">
-		<div class="overflow-x-hidden border-rd-xl max-h-sm">
+		<div class="border-rd-xl max-h-sm overflow-x-hidden">
 			<Embed
 				code={form?.code || landingCode}
 				{lines}
@@ -81,7 +81,7 @@
 			/>
 		</div>
 	</div>
-	<p class="font-sans text-sm break-all mx5 my3 text-stone-4">
+	<p class="mx5 my3 text-sm text-stone-4 font-sans break-all">
 		{#key [code, fontSize, lines, showOnHover, wrapLines].join(';')}
 			<span>{embedBaseUrl.protocol}//{embedBaseUrl.host}{embedBaseUrl.pathname}?</span
 			>{#each embedUrlSearchParamsArray as [key, value], i}<span class="text-green-7">{key}</span
@@ -91,9 +91,9 @@
 	</p>
 </div>
 
-<div class="flex flex-col max-w-2xl gap-4 font-sans text-sm mx3 my12">
+<div class="mx3 my12 text-sm font-sans flex flex-col gap-4 max-w-2xl">
 	<p>
-		<span class="rounded-full bg-red-1 py1 px2 text-red-9">Beta</span> The configurator below is not
+		<span class="px2 py1 bg-red-1 rounded-full text-red-9">Beta</span> The configurator below is not
 		yet polished. However, code blocks / generated URLs are stable and safe to use in presentations.
 		Read more about the project roadmap and goals on GitHub.
 	</p>
@@ -107,35 +107,35 @@
 	>
 		<label class="font-medium" for="code ">
 			<p class="m0">Code URL</p>
-			<p class="font-normal m0 mt1 text-stone-6 max-w-prose">
+			<p class="m0 mt1 text-stone-6 font-normal max-w-prose">
 				URL that returns a raw text file. Be sure to click the "Raw" button before copying the link
 				when using GitHub / Gists.
 			</p>
 		</label>
-		<div class="flex items-stretch gap-2 my3">
+		<div class="my3 flex gap-2 items-stretch">
 			<input
 				id="code"
 				name="code"
 				bind:value={code}
 				min="1"
 				type="url"
-				class="box-border block w-full m-auto text-lg border border-solid px4 h10 rounded-xl border-stone-4 ring-focus-visible"
+				class="px4 m-auto block border border-stone-4 rounded-xl border-solid text-lg h10 w-full box-border ring-focus-visible"
 			/>
 			<button
-				class="grid border-none bg-stone-1 px2 place-content-center text-stone-6 rounded-xl hover:bg-stone-2 focus:bg-stone-2 active:bg-stone-9 active:text-stone-1 ring-focus-visible"
+				class="px2 bg-stone-1 rounded-xl border-none text-stone-6 grid place-content-center active:bg-stone-9 focus:bg-stone-2 hover:bg-stone-2 active:text-stone-1 ring-focus-visible"
 			>
 				Update Preview
 			</button>
 		</div>
 	</form>
 	<Lines bind:lines />
-	<label class="flex items-center gap-5 font-medium">
+	<label class="font-medium flex gap-5 items-center">
 		<div class="w20">
 			<input
 				bind:value={fontSize}
 				min="1"
 				type="number"
-				class="box-border block w-full m-auto text-2xl text-center border border-solid h10 rounded-xl border-stone-4 ring-focus-visible"
+				class="m-auto block border border-stone-4 rounded-xl border-solid text-2xl text-center h10 w-full box-border ring-focus-visible"
 			/>
 		</div>
 		Font Size
@@ -152,12 +152,12 @@
 	/>
 </div>
 
-<footer class="flex items-center font-archivo mx3 my16 gap2">
+<footer class="mx3 my16 font-archivo flex gap2 items-center">
 	Made with
 	<span class="text-red-5"><Heart /></span>
 	<span
 		>by <a
-			class="text-black rounded-md ring-focus-visible decoration-none hover:decoration-underline focus-visible:decoration-underline"
+			class="rounded-md text-black decoration-none focus-visible:decoration-underline hover:decoration-underline ring-focus-visible"
 			href="https://alexanderliu.com">Alexander Liu</a
 		></span
 	>
