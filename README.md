@@ -1,6 +1,6 @@
 # Code Block Embed
 
-A site that displays raw text files with syntax highliting. Primarily designed to be embeded within presentations, such as with Tome.
+Display interactive code blocks in your presentations, or wherever you can embed a webpage. View this example [Tome](https://tome.app/alexander/code-block-embed-clxtjhwu000gykagfr3imz6pa).
 
 https://github.com/alexanderl19/code-block-embed/assets/41758627/df408a45-3b33-42b3-8e1b-f891085d4c51
 
@@ -55,10 +55,22 @@ Line numbers are zero indexed (0 corresponds to line 1).
 
 Enabling will unblur non-highlighted lines while hovering on the site.
 
+### wrapLines
+
+`"1"`, or `"0"` | Default: 1
+
+Enabling will wrap lines that exceed the width of the page.
+
 ## Roadmap
 
-- GUI Configurator
-- Theme Options
+[x] GUI Configurator
+[ ] Theme Options
+
+## Project Goals
+
+Maintaining a **stable** and simple solution for embedding code blocks and walkthroughs is the primary goal of this project. Any changes in existing functionality or appearance will be considered a breaking change. In other words, any valid URL today will remain functionally and visibly constant.
+
+However, while the configurator is still being actively developed, GUI defaults may change. This does not affect the stability of generated links!
 
 ## License
 
