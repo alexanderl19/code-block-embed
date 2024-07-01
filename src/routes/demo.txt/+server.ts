@@ -1,4 +1,5 @@
 import type { RequestHandler } from './$types';
+
 import landingCode from '../landing-code.txt?raw';
 
 export const GET: RequestHandler = () => {

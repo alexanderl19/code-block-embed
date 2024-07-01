@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { HighlightAuto, LineNumbers } from 'svelte-highlight';
 	import githubDark from 'svelte-highlight/styles/github-dark';
+
 	import generateStyleTag from './generateStyleTag';
 	import Group from './Group.svelte';
 

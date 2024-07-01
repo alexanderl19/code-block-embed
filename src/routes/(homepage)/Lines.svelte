@@ -1,6 +1,8 @@
 <script lang="ts">
+import type {DndEvent} from 'svelte-dnd-action';
+
 	import { GripHorizontal, Trash2, Plus } from 'lucide-svelte';
-	import { dragHandleZone, dragHandle, type DndEvent } from 'svelte-dnd-action';
+	import { dragHandleZone, dragHandle  } from 'svelte-dnd-action';
 	import { flip } from 'svelte/animate';
 
 	type Item = {

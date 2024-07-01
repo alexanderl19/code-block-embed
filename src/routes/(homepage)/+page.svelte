@@ -1,16 +1,17 @@
 <script lang="ts">
 	import type { ActionData } from './$types';
+
 	import { page } from '$app/stores';
+	import { enhance } from '$app/forms';
+
 	import Embed from '$lib/Embed.svelte';
-	import GithubMark from './GithubMark.svelte';
-	import Switch from './Switch.svelte';
 
 	import landingCode from '../landing-code.txt?raw';
+
+	import GithubMark from './GithubMark.svelte';
+	import Switch from './Switch.svelte';
 	import Lines from './Lines.svelte';
-
-	import { enhance } from '$app/forms';
 	import Heart from './Heart.svelte';
-
 	import og from './og.png';
 
 	export let form: ActionData;
@@ -98,7 +99,7 @@
 	</p>
 	<form
 		method="POST"
-		use:enhance={({}) => {
+		use:enhance={() => {
 			return async ({ update }) => {
 				update({ reset: false });
 			};
