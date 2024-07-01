@@ -9,5 +9,5 @@ export const actions = {
 			const response = await fetch(code);
 			return { code: await response.text() };
 		}
-	}
+	},
 } satisfies Actions;

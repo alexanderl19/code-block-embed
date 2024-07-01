@@ -38,7 +38,9 @@
 	:global(.hljs) :global(tr) {
 		opacity: 0.5;
 		filter: saturate(0.5) blur(1px);
-		transition: opacity 500ms ease-out, filter 500ms ease-out;
+		transition:
+			opacity 500ms ease-out,
+			filter 500ms ease-out;
 	}
 
 	.showOnHover :global(.hljs):hover :global(tr),

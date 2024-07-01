@@ -11,16 +11,16 @@
 	let lineGroups = [
 		{
 			id: 1,
-			text: '1-7'
+			text: '1-7',
 		},
 		{
 			id: 2,
-			text: '8-14'
+			text: '8-14',
 		},
 		{
 			id: 3,
-			text: '15-21'
-		}
+			text: '15-21',
+		},
 	] as Item[];
 
 	export const parseLines = (lineGroups: Item[]) =>

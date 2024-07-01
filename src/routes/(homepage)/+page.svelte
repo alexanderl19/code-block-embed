@@ -21,7 +21,7 @@
 	let lines: number[][] = [
 		[0, 1, 2, 3, 4, 5, 6],
 		[7, 8, 9, 10, 11, 12, 13],
-		[14, 15, 16, 17, 18, 19, 20]
+		[14, 15, 16, 17, 18, 19, 20],
 	];
 	let showOnHover = false;
 	let wrapLines = true;
@@ -34,7 +34,7 @@
 		...(fontSize !== 16 ? [['fontSize', fontSize.toString()]] : []),
 		...(lines.length !== 0 ? [['lines', lines.map((group) => group.toString()).join(':')]] : []),
 		...(showOnHover !== true ? [['showOnHover', showOnHover.toString()]] : []),
-		...(wrapLines !== true ? [['wrapLines', wrapLines ? '1' : '0']] : [])
+		...(wrapLines !== true ? [['wrapLines', wrapLines ? '1' : '0']] : []),
 	];
 </script>
 

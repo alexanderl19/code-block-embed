@@ -25,6 +25,6 @@ export const load = (async ({ url }) => {
 		lines: linesParsed,
 		showOnHover: showOnHover || undefined,
 		fontSize: Number(fontSize) || undefined,
-		wrapLines: wrapLinesParsed
+		wrapLines: wrapLinesParsed,
 	};
 }) satisfies PageServerLoad;

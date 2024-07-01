@@ -53,7 +53,9 @@
 		gap: 12px;
 		font-family: system-ui, sans-serif;
 		font-size: 14px;
-		font-feature-settings: 'tnum' on, 'lnum' on;
+		font-feature-settings:
+			'tnum' on,
+			'lnum' on;
 	}
 
 	button {

@@ -6,8 +6,8 @@ import extractorSvelte from '@unocss/extractor-svelte';
 export default defineConfig({
 	plugins: [
 		UnoCSS({
-			extractors: [extractorSvelte()]
+			extractors: [extractorSvelte()],
 		}),
-		sveltekit()
-	]
+		sveltekit(),
+	],
 });
