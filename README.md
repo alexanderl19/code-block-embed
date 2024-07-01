@@ -63,9 +63,9 @@ Enabling will wrap lines that exceed the width of the page.
 
 ## Roadmap
 
-[x] GUI Configurator
-[ ] Theme Options
-[ ] Regression Testing
+- [x] GUI Configurator
+- [ ] Theme Options
+- [ ] Regression Testing
 
 ## Project Goals
 
