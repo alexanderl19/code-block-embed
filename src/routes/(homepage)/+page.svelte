@@ -11,6 +11,8 @@
 	import { enhance } from '$app/forms';
 	import Heart from './Heart.svelte';
 
+	import og from './og.png';
+
 	export let form: ActionData;
 
 	let code = new URL('demo.txt', $page.url).toString();
@@ -42,6 +44,8 @@
 		name="description"
 		content="Display interactive code blocks in your presentations, or wherever you can embed a webpage."
 	/>
+	<meta property="og:image" content={og} />
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="flex items-baseline justify-between font-sans mx3 my12">
