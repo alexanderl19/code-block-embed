@@ -49,8 +49,8 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="flex items-baseline justify-between font-sans mx3 my12">
-	<p class="max-w-lg text-xl font-medium font-archivo text-balance">
+<div class="flex items-start lg:items-baseline justify-between font-sans mx3 my16">
+	<p class="max-w-lg text-xl font-medium font-archivo text-balance m0">
 		Display interactive code blocks in your presentations, or wherever you can embed a webpage. View
 		this example <a
 			class="text-blue-7 decoration-none hover:underline"
@@ -63,7 +63,7 @@
 		href="https://github.com/alexanderl19/code-block-embed"
 		target="_blank"
 		rel="noopener noreferrer"
-		class="mr-2"
+		class="mr-2 line-height-[0] mt2 lg:mt0"
 	>
 		<GithubMark />
 	</a>
