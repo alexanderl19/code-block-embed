@@ -31,7 +31,7 @@
 		['code', code],
 		...(fontSize !== 16 ? [['fontSize', fontSize.toString()]] : []),
 		...(lines.length !== 0 ? [['lines', lines.map((group) => group.toString()).join(':')]] : []),
-		...(showOnHover !== false ? [['showOnHover', showOnHover.toString()]] : []),
+		...(showOnHover !== true ? [['showOnHover', showOnHover.toString()]] : []),
 		...(wrapLines !== true ? [['wrapLines', wrapLines ? '1' : '0']] : [])
 	];
 </script>
