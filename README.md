@@ -8,7 +8,9 @@ https://github.com/alexanderl19/code-block-embed/assets/41758627/df408a45-3b33-4
 
 ## Guide
 
-Currently, there is no GUI for creating an embed link, but crafting the URL by hand shouldn't be difficult.
+Visit the [configurator on the home page](https://code-block-embed.alexanderliu.dev/) to configure and copy the link for your embed. Then, depending on your presentation software, insert the generated URL into an embed.
+
+Alternatively, you may opt to craft the URL by hand based on the following parameters.
 
 ## URL Syntax
 
