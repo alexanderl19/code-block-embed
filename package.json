@@ -38,7 +38,7 @@
 		"svelte-highlight": "7.6.1",
 		"svelte-preprocess": "5.1.4",
 		"tslib": "2.6.3",
-		"typescript": "5.5.3",
+		"typescript": "5.5.4",
 		"unocss": "0.61.5",
 		"vite": "5.3.4"
 	},
