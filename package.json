@@ -35,7 +35,7 @@
 		"svelte": "4.2.18",
 		"svelte-check": "3.8.4",
 		"svelte-dnd-action": "0.9.49",
-		"svelte-highlight": "7.6.1",
+		"svelte-highlight": "7.7.0",
 		"svelte-preprocess": "5.1.4",
 		"tslib": "2.6.3",
 		"typescript": "5.5.4",
