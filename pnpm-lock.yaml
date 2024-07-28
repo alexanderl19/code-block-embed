@@ -45,8 +45,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       highlight.js:
-        specifier: 11.9.0
-        version: 11.9.0
+        specifier: 11.10.0
+        version: 11.10.0
       lucide-svelte:
         specifier: 0.396.0
         version: 0.396.0(svelte@4.2.18)
