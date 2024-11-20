@@ -24,7 +24,7 @@
 		"@unocss/extractor-svelte": "0.64.1",
 		"@unocss/preset-mini": "0.64.1",
 		"autoprefixer": "10.4.20",
-		"bits-ui": "0.21.13",
+		"bits-ui": "0.21.16",
 		"eslint": "8.57.0",
 		"highlight.js": "11.10.0",
 		"lucide-svelte": "0.460.1",
