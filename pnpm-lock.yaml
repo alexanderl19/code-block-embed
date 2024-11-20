@@ -15,8 +15,8 @@ importers:
         specifier: 1.0.6
         version: 1.0.6(prettier@3.2.5)(svelte@4.2.19)
       '@fontsource-variable/archivo':
-        specifier: 5.0.21
-        version: 5.0.21
+        specifier: 5.1.0
+        version: 5.1.0
       '@sveltejs/adapter-vercel':
         specifier: 4.0.5
         version: 4.0.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.11(sass@1.77.8)))(svelte@4.2.19)(vite@5.4.11(sass@1.77.8)))
@@ -635,8 +635,8 @@ packages:
   '@floating-ui/utils@0.2.4':
     resolution: {integrity: sha512-dWO2pw8hhi+WrXq1YJy2yCuWoL20PddgGaqTgVe4cOS9Q6qklXCiA1tJEqX6BEwRNSCP84/afac9hd4MS+zEUA==}
 
-  '@fontsource-variable/archivo@5.0.21':
-    resolution: {integrity: sha512-hH7WOZLFXDsZcB1b8yeij8SY62jst28/JZCOMxEynCAXmTqUoLx6l4wyTHUDhoPhPcT8wucSmk6JuRwaDMJI4g==}
+  '@fontsource-variable/archivo@5.1.0':
+    resolution: {integrity: sha512-q0q76Qt9qulNS/nMFhAcaWeDi/Z3Eka5qKX1P75DV06KwpCJ4Q2yeh0RnugNiyGFyxkinx9zJfyjO+agG4Yfkg==}
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -3203,7 +3203,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.4': {}
 
-  '@fontsource-variable/archivo@5.0.21': {}
+  '@fontsource-variable/archivo@5.1.0': {}
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
