@@ -18,7 +18,7 @@
 		"@alexanderliu/prettier-config-svelte": "1.0.5",
 		"@fontsource-variable/archivo": "5.0.21",
 		"@sveltejs/adapter-vercel": "4.0.5",
-		"@sveltejs/kit": "2.5.25",
+		"@sveltejs/kit": "2.5.28",
 		"@sveltejs/vite-plugin-svelte": "3.1.2",
 		"@unocss/eslint-config": "0.64.1",
 		"@unocss/extractor-svelte": "0.64.1",
