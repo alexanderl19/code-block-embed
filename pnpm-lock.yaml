@@ -12,8 +12,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1(eslint@8.57.1)(svelte@4.2.19)(typescript@5.5.4)
       '@alexanderliu/prettier-config-svelte':
-        specifier: 1.0.5
-        version: 1.0.5(prettier@3.2.5)(svelte@4.2.19)
+        specifier: 1.0.6
+        version: 1.0.6(prettier@3.2.5)(svelte@4.2.19)
       '@fontsource-variable/archivo':
         specifier: 5.0.21
         version: 5.0.21
@@ -97,8 +97,8 @@ packages:
     peerDependencies:
       eslint: 8.57.0
 
-  '@alexanderliu/prettier-config-svelte@1.0.5':
-    resolution: {integrity: sha512-Sd6lzyHt46IY1oIfM3ezFSUf6m9KaFFW0PUnhZ5/RGIZByKuNcLGwgaDNWqwVKD7fz4GH60/xH5Gvt4URh9eyA==}
+  '@alexanderliu/prettier-config-svelte@1.0.6':
+    resolution: {integrity: sha512-Y8MP8ilkTGzX8O4kDpPt23c0TEKxzZUEKdTdcqGQVw0uJAOsEieCWGDb5RM7ukudob/ULbpiaS5iT87e3SwmpQ==}
     peerDependencies:
       prettier: 3.2.5
 
@@ -2288,8 +2288,8 @@ packages:
       prettier:
         optional: true
 
-  prettier-plugin-svelte@3.2.3:
-    resolution: {integrity: sha512-wJq8RunyFlWco6U0WJV5wNCM7zpBFakS76UBSbmzMGpncpK98NZABaE+s7n8/APDCEVNHXC5Mpq+MLebQtsRlg==}
+  prettier-plugin-svelte@3.2.6:
+    resolution: {integrity: sha512-Y1XWLw7vXUQQZmgv1JAEiLcErqUniAF2wO7QJsw8BVMvpLET2dI5WpEIEJx1r11iHVdSMzQxivyfrH9On9t2IQ==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -2809,11 +2809,11 @@ snapshots:
       - ts-node
       - typescript
 
-  '@alexanderliu/prettier-config-svelte@1.0.5(prettier@3.2.5)(svelte@4.2.19)':
+  '@alexanderliu/prettier-config-svelte@1.0.6(prettier@3.2.5)(svelte@4.2.19)':
     dependencies:
       '@alexanderliu/prettier-config': 1.0.2(prettier@3.2.5)
       prettier: 3.2.5
-      prettier-plugin-svelte: 3.2.3(prettier@3.2.5)(svelte@4.2.19)
+      prettier-plugin-svelte: 3.2.6(prettier@3.2.5)(svelte@4.2.19)
     transitivePeerDependencies:
       - svelte
 
@@ -5121,7 +5121,7 @@ snapshots:
     optionalDependencies:
       prettier: 3.2.5
 
-  prettier-plugin-svelte@3.2.3(prettier@3.2.5)(svelte@4.2.19):
+  prettier-plugin-svelte@3.2.6(prettier@3.2.5)(svelte@4.2.19):
     dependencies:
       prettier: 3.2.5
       svelte: 4.2.19
