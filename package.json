@@ -40,7 +40,7 @@
 		"tslib": "2.6.3",
 		"typescript": "5.5.4",
 		"unocss": "0.64.1",
-		"vite": "5.4.14"
+		"vite": "5.4.20"
 	},
 	"engines": {
 		"node": "20.x"
