@@ -13,7 +13,7 @@ importers:
         version: 1.0.1(eslint@8.57.1)(svelte@4.2.19)(typescript@5.5.4)
       '@alexanderliu/prettier-config-svelte':
         specifier: 1.0.6
-        version: 1.0.6(prettier@3.2.5)(svelte@4.2.19)
+        version: 1.0.6(prettier@3.6.2)(svelte@4.2.19)
       '@fontsource-variable/archivo':
         specifier: 5.0.21
         version: 5.0.21
@@ -57,8 +57,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2(postcss@8.4.49)
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.6.2
+        version: 3.6.2
       sass:
         specifier: 1.77.8
         version: 1.77.8
@@ -2290,8 +2290,8 @@ packages:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2809,18 +2809,18 @@ snapshots:
       - ts-node
       - typescript
 
-  '@alexanderliu/prettier-config-svelte@1.0.6(prettier@3.2.5)(svelte@4.2.19)':
+  '@alexanderliu/prettier-config-svelte@1.0.6(prettier@3.6.2)(svelte@4.2.19)':
     dependencies:
-      '@alexanderliu/prettier-config': 1.0.2(prettier@3.2.5)
-      prettier: 3.2.5
-      prettier-plugin-svelte: 3.2.6(prettier@3.2.5)(svelte@4.2.19)
+      '@alexanderliu/prettier-config': 1.0.2(prettier@3.6.2)
+      prettier: 3.6.2
+      prettier-plugin-svelte: 3.2.6(prettier@3.6.2)(svelte@4.2.19)
     transitivePeerDependencies:
       - svelte
 
-  '@alexanderliu/prettier-config@1.0.2(prettier@3.2.5)':
+  '@alexanderliu/prettier-config@1.0.2(prettier@3.6.2)':
     dependencies:
-      prettier: 3.2.5
-      prettier-plugin-packagejson: 2.4.14(prettier@3.2.5)
+      prettier: 3.6.2
+      prettier-plugin-packagejson: 2.4.14(prettier@3.6.2)
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -5108,19 +5108,19 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.4.14(prettier@3.2.5):
+  prettier-plugin-packagejson@2.4.14(prettier@3.6.2):
     dependencies:
       sort-package-json: 2.10.0
       synckit: 0.9.0
     optionalDependencies:
-      prettier: 3.2.5
+      prettier: 3.6.2
 
-  prettier-plugin-svelte@3.2.6(prettier@3.2.5)(svelte@4.2.19):
+  prettier-plugin-svelte@3.2.6(prettier@3.6.2)(svelte@4.2.19):
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.6.2
       svelte: 4.2.19
 
-  prettier@3.2.5: {}
+  prettier@3.6.2: {}
 
   punycode@2.3.1: {}
 
