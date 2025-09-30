@@ -37,7 +37,7 @@
 		"svelte-dnd-action": "0.9.57",
 		"svelte-highlight": "7.7.0",
 		"svelte-preprocess": "5.1.4",
-		"tslib": "2.6.3",
+		"tslib": "2.8.1",
 		"typescript": "5.5.4",
 		"unocss": "0.64.1",
 		"vite": "5.4.20"
