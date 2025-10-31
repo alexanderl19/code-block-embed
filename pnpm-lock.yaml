@@ -48,8 +48,8 @@ importers:
         specifier: 11.10.0
         version: 11.10.0
       lucide-svelte:
-        specifier: 0.460.1
-        version: 0.460.1(svelte@4.2.19)
+        specifier: 0.552.0
+        version: 0.552.0(svelte@4.2.19)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -1992,8 +1992,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-svelte@0.460.1:
-    resolution: {integrity: sha512-guJjJSeWlKivsEG51Xg41egunBMJcobhDmkLv/NYTXmXyCEwxMf1A+HX7RvDEKiXbXYgtLImih67tI08MSUOkA==}
+  lucide-svelte@0.552.0:
+    resolution: {integrity: sha512-zynJ64KOsuQG3I4tSqfvvl7Kc9x4mWkppbxsuyrbegQwma9HFhBp4aE6HuQNF4c3pS0AHWHki5CAMs5m3QXA5w==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -4866,7 +4866,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-svelte@0.460.1(svelte@4.2.19):
+  lucide-svelte@0.552.0(svelte@4.2.19):
     dependencies:
       svelte: 4.2.19
 
