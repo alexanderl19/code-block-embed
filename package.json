@@ -23,7 +23,7 @@
 		"@unocss/eslint-config": "0.64.1",
 		"@unocss/extractor-svelte": "0.64.1",
 		"@unocss/preset-mini": "0.64.1",
-		"autoprefixer": "10.4.20",
+		"autoprefixer": "10.4.27",
 		"bits-ui": "0.21.16",
 		"eslint": "8.57.1",
 		"highlight.js": "11.10.0",
